@@ -21,12 +21,17 @@ h1, h2, h3, h4, h5, h6{
     color: #2C303F;
 }
 
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2rem;
+    line-height: 2rem;
+}
 p{
    color: #5b5e6d;
 }
 
-.wrapper{
-}
 
 .bold{
     font-weight: bold;
@@ -79,19 +84,30 @@ p{
     padding-top: 70px;
 }
 
-.intro-text{
+.cta-text{
     font-size: 1.4rem;
-    padding: 1.5rem 0rem;
 }
 
-button{
+.cta-image {
     width: 100%;
-    background: #414ba4;
-    color: white;
+    max-width: 900px;
+}
+
+
+button {
+    width: 100%;
+    border: 2px solid #414ba4;
+    color: #414ba4;
+    background: #fff;
     border-radius: 4px;
     padding: 1rem;
     font-weight: bold;
     font-size: 1rem;
+}
+
+.button-blue{
+    background: #414ba4;
+    color: white;
 }
 
 input{
@@ -103,7 +119,16 @@ input{
     padding: 1rem;
     font-size: 1rem;
     margin-bottom: 1rem;
+}
 
+.wrapper{
+    background: #F4F3F4;
+    border-top: 2px solid #f2f2f2;
+}
+
+
+.container{
+    padding: 1rem;
 }
 
 /* Here comes the logoshow */
@@ -113,7 +138,6 @@ input{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    background: #F4F3F4;
 }
 
 .logo-container img{
@@ -134,6 +158,45 @@ input{
     border-bottom: none;
 }
 
+/* Her goes the footer */ 
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+}
+
+.flex-item{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.footer-container ul{
+    list-style: none;
+}
+.footer-container ul li{
+    line-height: 2.4rem;
+}
+
+.footer-container ul li:first-child{
+    font-weight: bold;
+}
+
+.second-footer{
+    background: #F4F3F4;
+}
+
+.second-footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.second-footer ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
 
 
 @media screen and (min-width: 600px) {
@@ -150,6 +213,10 @@ input{
 
     .partner-logo:nth-of-type(odd) {
         border-right: 1px solid lightgray;
+    }
+
+    .flex-item{
+        width: 33%;
     }
 }
 
@@ -169,21 +236,8 @@ input{
         border-right: none;
     }
 
-}
-/* Her goes the footer */ 
+    .flex-item{
+        width: 25%;
+    }
 
-.second-footer{
-    background: #F4F3F4;
-}
-
-.second-footer ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.second-footer ul li{
-    list-style: none;
-    font-size: 1.3rem;
-    margin: 1rem;
 }

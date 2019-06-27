@@ -198,6 +198,26 @@ input{
     margin: 1rem;
 }
 
+.footer-info{
+    width: 100%;
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.english{
+    position: relative;
+}
+
+.english:before{
+    display: absolute;
+    content: url('../images/us-flag.png');
+    width: 15px;
+}
+
 
 @media screen and (min-width: 600px) {
     .logo-container{
@@ -217,6 +237,10 @@ input{
 
     .flex-item{
         width: 33%;
+    }
+
+    .flex-item:first-child{
+        width: 100%;
     }
 }
 
